@@ -6,25 +6,29 @@
 :root {
     --tenmargin: 10px;
     --main-color: #0072bb;
+    --white: #fff;
+    --spacetwenty: 20px;
+    --sidecolumnimgwidth: 150px;
+    --main-img-maxheight: 200px;
 }
 
 body {
     background-color: #d9dcd6;
 }
 
-/* Below is the Logo on the top left of the page */ 
+/* Below is the Logo on the top left of the page, It needs to be a dark color, with lighter text to fit the brand*/ 
 .header {
-    padding: 20px;
+    padding: var(--spacetwenty);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/*this below is to offset seo from the rest of the word Horiseon*/ 
 .header h1 .seo {
     color: #d9dcd6;
 }
@@ -32,12 +36,13 @@ body {
 /* Below is the top navigation bar styling */
 .header nav {
     padding-top: 15px;
-    margin-right: 20px;
+    margin-right: var(--spacetwenty);
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: var(--spacetwenty);
 }
 
+/*this below gets rid of the bullet points and allow the list to be put in a line along the top*/
 .header nav ul {
     list-style-type: none;
 }
@@ -49,7 +54,7 @@ body {
 
 /*the code directly below gets rid of the default link display*/
 a {
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
 }
 /* the code directly below refers to all paragraph type size*/ 
@@ -79,13 +84,13 @@ p {
 .content {
     width: 75%;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: var(--spacetwenty);
 }
 
 /* the section .benefits is the vertical bar on the right of the page */ 
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: var(--spacetwenty);
+    padding: var(--spacetwenty);
     clear: both;
     float: right;
     width: 20%;
@@ -97,17 +102,17 @@ p {
 /*below referes to the boxes margin and color of the side column*/
 .benefit-lead {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .benefit-brand {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .benefit-cost {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 /*below refers to the headers for the side column*/
@@ -130,76 +135,76 @@ p {
 .benefit-lead img {
     display: block;
     margin: var(--tenmargin) auto;
-    max-width: 150px;
+    max-width: var(--sidecolumnimgwidth);
 }
 
 .benefit-brand img {
     display: block;
     margin: var(--tenmargin) auto;
-    max-width: 150px;
+    max-width: var(--sidecolumnimgwidth);
 }
 
 .benefit-cost img {
     display: block;
     margin: var(--tenmargin) auto;
-    max-width: 150px;
+    max-width: var(--sidecolumnimgwidth);
 }
 
 /* first block under main image titled search engine optomization*/ 
 .search-engine-optimization {
-    margin-bottom: 20px;
+    margin-bottom: var(--spacetwenty);
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--main-color);
-    color: #ffffff;
+    color: var(--white);
 }
 
 /* second block under main image titled online reputation management*/ 
 .online-reputation-management {
-    margin-bottom: 20px;
+    margin-bottom: var(--spacetwenty);
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--main-color);
-    color: #ffffff;
+    color: var(--white);
 }
 /* third block under main image titled social media marketing*/
 .social-media-marketing {
-    margin-bottom: 20px;
+    margin-bottom: var(--spacetwenty);
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--main-color);
-    color: #ffffff;
+    color: var(--white);
 }
 
 /* below contains the image height within the three blocks above*/
 .search-engine-optimization img {
-    max-height: 200px;
+    max-height: var(--main-img-maxheight);
 }
 
 .online-reputation-management img {
-    max-height: 200px;
+    max-height: var(--main-img-maxheight);
 }
 
 .social-media-marketing img {
-    max-height: 200px;
+    max-height: var(--main-img-maxheight);
 }
 
 /*below contains the headers for the three blocks above*/ 
 .search-engine-optimization h2 {
-    margin-bottom: 20px;
+    margin-bottom: var(--spacetwenty);
     font-size: 36px;
 }
 
 .online-reputation-management h2 {
-    margin-bottom: 20px;
+    margin-bottom: var(--spacetwenty);
     font-size: 36px;
 }
 
 .social-media-marketing h2 {
-    margin-bottom: 20px;
+    margin-bottom:var(--spacetwenty);
     font-size: 36px;
 }
 
@@ -212,5 +217,5 @@ p {
 }
 
 .footer h2 {
-    font-size: 20px;
+    font-size: var(--spacetwenty);
 }
