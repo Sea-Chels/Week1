@@ -5,8 +5,8 @@ In this practice I learned how to comment on a css file in a way that helps othe
 
 we were given a screenshot of what the website should look like and whilst I was changing the html and css it was critical to the project that the website stayed up to 90% of what it originally looked like. 
 
-```md
-    ![screenshot of the image](./Assets/01-html-css-git-homework-demo.png)
+  '''
+    ![screenshot of the image](/Users/chelbysallady/week1/02-Homework/Assets/01-html-css-git-homework-demo.png)
     ```
 ## Usage
 This file was used for *educational purposes* and should only be used for educational purposes by others. 
